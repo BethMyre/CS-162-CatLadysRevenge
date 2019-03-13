@@ -10,7 +10,6 @@
 #include <cstdlib>
 #include <ctime>
 #include "game.hpp"
-#include "bag.hpp"
 
 
 using std::cout;

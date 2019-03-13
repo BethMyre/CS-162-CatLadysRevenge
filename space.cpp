@@ -7,13 +7,15 @@
 #include <iostream>
 #include <string>
 #include "space.hpp"
+#include "bag.hpp"
 
-Space::Space(std::string name){
+Space::Space(std::string name, Bag * baggie){
     this->name = name;
     top = nullptr;
     right = nullptr;
     left = nullptr;
     bottom = nullptr;
+    theBag = baggie;
 }
 
 Space::~Space(){

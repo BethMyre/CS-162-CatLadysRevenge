@@ -9,6 +9,7 @@
 #include "game.hpp"
 #include "intValidate.hpp"
 #include "space.hpp"
+#include "bag.hpp"
 
 Game::Game() {
     playerPtr = nullptr;
@@ -21,12 +22,13 @@ Game::Game() {
     myCasino = nullptr;
     myPark = nullptr;
     myFurnitureFactory = nullptr;
+    myBag = new Bag;
 }
 
 void Game::play(){
     playerPtr = createBoard();
     intro();
-
+    playerPtr->action();
 
     destroyBoard(myHome);
 }
@@ -63,15 +65,15 @@ int Game::again(){
 
 Space * Game::createBoard(){
     //Dynamically allocate spaces
-    myHome = new Space("home");
-    myWork = new Space("work");
-    myPetStore = new Space("pet store");
-    mySeniorCenter = new Space("senior center");
-    myStreet = new Space("street");
-    mySupplyStore = new Space("supply store");
-    myCasino = new Space("casino");
-    myPark = new Space("park");
-    myFurnitureFactory = new Space("furniture factory");
+    myHome = new Space("home", myBag);
+    myWork = new Work("work1", myBag);
+    myPetStore = new Space("pet store", myBag);
+    mySeniorCenter = new Space("senior center", myBag);
+    myStreet = new Space("street", myBag);
+    mySupplyStore = new Space("supply store", myBag);
+    myCasino = new Space("casino", myBag);
+    myPark = new Space("park", myBag);
+    myFurnitureFactory = new Space("furniture factory", myBag);
 
     //Make spaces point to each other
     myFurnitureFactory->setRight(myWork);

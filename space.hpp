@@ -8,6 +8,7 @@
 #define SPACE_HPP
 
 #include <string>
+#include "bag.hpp"
 
 class Space {
 
@@ -17,9 +18,10 @@ protected:
     Space * right;
     Space * left;
     Space * bottom;
+    Bag * theBag;
 
 public:
-    Space(std::string);
+    Space(std::string, Bag *);
     virtual ~Space();
 
     void setTop(Space *);
