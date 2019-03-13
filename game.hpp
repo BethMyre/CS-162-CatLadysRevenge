@@ -28,7 +28,7 @@ private:
 
     Space * createBoard();
     void destroyBoard(Space * home);    //Should this be Space * &home ?
-
+    void intro();
     void printMap();
 
 public:

@@ -25,20 +25,32 @@ Game::Game() {
 
 void Game::play(){
     playerPtr = createBoard();
-    std::cout <<"***************************************" << std::endl;
-    std::cout <<"          CAT LADY'S REVENGE" << std::endl;
-    std::cout <<"***************************************" << std::endl;
-    std::cout << std::endl << std::endl << std::endl << std::endl << std:: endl;
+    intro();
+
 
     destroyBoard(myHome);
 }
 
 int Game::start(){
+    std::cout << std::endl << std::endl;
     std::cout << "Would you like to play Cat Lady's Revenge?  (Please say yes.)" << std::endl;
     std::cout << "1. Yes" << std::endl;
     std::cout << "2. No" << std::endl << std::endl;
     int selection = intValidate(1, 2);
     return selection;
+}
+
+void Game::intro(){
+    std::cout <<"***************************************" << std::endl;
+    std::cout <<"          CAT LADY'S REVENGE" << std::endl;
+    std::cout <<"***************************************" << std::endl << std::endl;
+    std::cout << "You're a nice cat lady, enjoying the simple life." << std::endl;
+    std::cout << "You just have a little more work to finish up "
+              << "before you can go home to your cats." << std::endl << std::endl;
+    std::cout << "You work at a translation company copying words you don't understand." << std::endl;
+    std::cout << "You earn $10 for every sentence that you type correctly." << std::endl;
+    std::cout << "If the language is particularly difficult, you earn $15 per sentence." << std::endl << std::endl;
+    std::cout << "Before you leave today you would like to earn at least $50." << std::endl << std::endl;
 }
 
 int Game::again(){
