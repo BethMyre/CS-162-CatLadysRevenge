@@ -31,7 +31,23 @@ void Game::play(){
     myBag = new Bag;
     playerPtr = createBoard();
     intro();
-    playerPtr->action();
+    int selection = 0;
+    while (theTime <= 120) {
+        selection = playerPtr->action();
+        if (selection == 1){
+            moveTop();
+        }
+        else if (selection == 2) {
+            moveRight();
+        }
+        else if (selection == 3) {
+            moveLeft();
+        }
+        else if (selection == 4){
+            moveBottom();
+        }
+    }
+
     std::cout << "Now we're back in Game::play" << std::endl;
     displayTime();
     theTime += 10;
