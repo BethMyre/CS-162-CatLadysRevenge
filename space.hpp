@@ -23,12 +23,17 @@ public:
     Space(Bag *);
     virtual ~Space();
 
+    Space * getTop();
+    Space * getRight();
+    Space * getLeft();
+    Space * getBottom();
+
     void setTop(Space *);
     void setRight(Space *);
     void setLeft(Space *);
     void setBottom(Space *);
 
-    virtual void action();
+    virtual int action();
 
 };
 

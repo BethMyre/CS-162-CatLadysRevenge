@@ -19,7 +19,7 @@ Street::~Street() {
 
 }
 
-void Street::action() {
+int Street::action() {
     int selection = 0;
     std::cout << "You are now standing in the street." << std::endl;
     std::cout << "In order to get home, you need to walk through the park." << std::endl;
@@ -32,7 +32,7 @@ void Street::action() {
             std::cout << "//Need to print map here." << std::endl;
         }
     }
-
+    return 4;
 }
 
 

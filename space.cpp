@@ -21,6 +21,23 @@ Space::~Space(){
 
 }
 
+Space * Space::getTop() {
+    return top;
+}
+
+Space * Space::getRight() {
+    return right;
+}
+
+Space * Space::getLeft() {
+    return left;
+}
+
+Space * Space::getBottom() {
+    return bottom;
+}
+
+
 void Space::setTop(Space * top){
     this->top = top;
 }
@@ -37,6 +54,6 @@ void Space::setBottom(Space * bottom){
     this->bottom = bottom;
 }
 
-void Space::action() {
-
+int Space::action() {
+    return 0;
 }

@@ -33,7 +33,7 @@ private:
     Bag * myBag;
 
     //Int used to track time
-    int time;
+    int theTime;
 
     Space * createBoard();
     void destroyBoard(Space * home);    //Should this be Space * &home ?
@@ -46,6 +46,10 @@ public:
     int start();
     int again();
     void displayTime();
+    void moveTop();
+    void moveRight();
+    void moveLeft();
+    void moveBottom();
 
 };
 

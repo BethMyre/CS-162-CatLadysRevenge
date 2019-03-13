@@ -20,7 +20,7 @@ public:
     Work(Bag *);
     ~Work();
 
-    void action();
+    int action();
 
 };
 

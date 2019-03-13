@@ -19,7 +19,7 @@ public:
     Street(Bag *);
     ~Street();
 
-    void action();
+    int action();
 
 };
 

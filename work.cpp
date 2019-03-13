@@ -18,7 +18,7 @@ Work::~Work() {
 
 }
 
-void Work::action() {
+int Work::action() {
     int selection = 0;
     while (selection != 1) {
         std::cout << "What would you like to do?" << std::endl;
@@ -33,6 +33,7 @@ void Work::action() {
             hard();
         }
     }
+    return 4;
 }
 
 void Work::easy() {

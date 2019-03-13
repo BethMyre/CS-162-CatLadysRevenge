@@ -23,18 +23,18 @@ Game::Game() {
     myPark = nullptr;
     myFurnitureFactory = nullptr;
     myBag = nullptr;
-    time = 0;
+    theTime = 0;
 }
 
 void Game::play(){
-    time = 0;
+    theTime = 0;
     myBag = new Bag;
     playerPtr = createBoard();
     intro();
     playerPtr->action();
     std::cout << "Now we're back in Game::play" << std::endl;
     displayTime();
-    time += 10;
+    theTime += 10;
     displayTime();
     destroyBoard(myHome);
     delete myBag;
@@ -120,8 +120,25 @@ void Game::printMap(){
 
 void Game::displayTime() {
     //Need to make minutes alway be 2 digits wide
-    std::cout << "The time is now " << 5 + time/60 << ":" << time%60 << std::endl << std::endl;
+    std::cout << "The time is now " << 5 + theTime/60 << ":" << theTime%60 << std::endl << std::endl;
 }
 
+void Game::moveTop() {
+    theTime += 5;
+    playerPtr = playerPtr->getTop();
+}
 
+void Game::moveRight() {
+    theTime += 5;
+    playerPtr = playerPtr->getRight();
+}
 
+void Game::moveLeft() {
+    theTime += 5;
+    playerPtr = playerPtr->getLeft();
+}
+
+void Game::moveBottom() {
+    theTime += 5;
+    playerPtr = playerPtr->getBottom();
+}
