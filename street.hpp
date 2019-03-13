@@ -16,7 +16,7 @@ private:
 
 
 public:
-    Street(std::string, Bag *);
+    Street(Bag *);
     ~Street();
 
     void action();

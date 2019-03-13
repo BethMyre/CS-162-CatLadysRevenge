@@ -13,7 +13,6 @@
 class Space {
 
 protected:
-    std::string name;
     Space * top;
     Space * right;
     Space * left;
@@ -21,7 +20,7 @@ protected:
     Bag * theBag;
 
 public:
-    Space(std::string, Bag *);
+    Space(Bag *);
     virtual ~Space();
 
     void setTop(Space *);
@@ -29,7 +28,6 @@ public:
     void setLeft(Space *);
     void setBottom(Space *);
 
-    virtual void description();
     virtual void action();
 
 };

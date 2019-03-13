@@ -9,8 +9,7 @@
 #include "space.hpp"
 #include "bag.hpp"
 
-Space::Space(std::string name, Bag * baggie){
-    this->name = name;
+Space::Space(Bag * baggie){
     top = nullptr;
     right = nullptr;
     left = nullptr;
@@ -38,10 +37,6 @@ void Space::setBottom(Space * bottom){
     this->bottom = bottom;
 }
 
-void Space::description(){
-    std::cout << "Welcome to " << name << "." << std::endl;
-}
+void Space::action() {
 
-void Space::action(){
-    std::cout << "This is where the things that happen in " << name << " happen." << std::endl;
 }

@@ -17,7 +17,7 @@ private:
     void easy();
 
 public:
-    Work(std::string, Bag *);
+    Work(Bag *);
     ~Work();
 
     void action();

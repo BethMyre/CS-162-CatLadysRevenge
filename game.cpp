@@ -73,15 +73,15 @@ int Game::again(){
 
 Space * Game::createBoard(){
     //Dynamically allocate spaces
-    myHome = new Space("home", myBag);
-    myWork = new Work("work1", myBag);
-    myPetStore = new Space("pet store", myBag);
-    mySeniorCenter = new Space("senior center", myBag);
-    myStreet = new Street("street1", myBag);
-    mySupplyStore = new Space("supply store", myBag);
-    myCasino = new Space("casino", myBag);
-    myPark = new Space("park", myBag);
-    myFurnitureFactory = new Space("furniture factory", myBag);
+    myHome = new Space(myBag);
+    myWork = new Work(myBag);
+    myPetStore = new Space(myBag);
+    mySeniorCenter = new Space(myBag);
+    myStreet = new Street(myBag);
+    mySupplyStore = new Space(myBag);
+    myCasino = new Space(myBag);
+    myPark = new Space(myBag);
+    myFurnitureFactory = new Space(myBag);
 
     //Make spaces point to each other
     myFurnitureFactory->setRight(myWork);

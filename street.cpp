@@ -10,8 +10,8 @@
 #include "street.hpp"
 #include "intValidate.hpp"
 
-Street::Street (std::string name, Bag * baggie)
-        : Space(name, baggie) {
+Street::Street (Bag * baggie)
+        : Space(baggie) {
 
 }
 

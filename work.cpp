@@ -9,8 +9,8 @@
 #include "work.hpp"
 #include "intValidate.hpp"
 
-Work::Work (std::string name, Bag * baggie)
-        : Space(name, baggie) {
+Work::Work (Bag * baggie)
+        : Space(baggie) {
 
 }
 
