@@ -8,6 +8,7 @@
 #define GAME_HPP
 
 #include "space.hpp"
+#include "bag.hpp"
 
 class Game {
 
@@ -25,6 +26,9 @@ private:
     Space * myCasino;
     Space * myPark;
     Space * myFurnitureFactory;
+
+    //Cat lady's bag
+    Bag myBag;
 
     Space * createBoard();
     void destroyBoard(Space * home);    //Should this be Space * &home ?
