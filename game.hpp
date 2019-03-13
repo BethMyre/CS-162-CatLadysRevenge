@@ -9,6 +9,7 @@
 
 #include "space.hpp"
 #include "work.hpp"
+#include "street.hpp"
 #include "bag.hpp"
 
 class Game {

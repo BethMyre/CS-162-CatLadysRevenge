@@ -20,18 +20,17 @@ Work::~Work() {
 
 void Work::action() {
     int selection = 0;
-    while (selection != 3) {
+    while (selection != 1) {
         std::cout << "What would you like to do?" << std::endl;
-        std::cout << "1. Copy an easy sentence." << std::endl;
-        std::cout << "2. Copy a hard sentence." << std::endl;
-        std::cout << "3. Leave work." << std::endl << std::endl;
+        std::cout << "1. Leave work and step out into the street." << std::endl;
+        std::cout << "2. Copy an easy sentence." << std::endl;
+        std::cout << "3. Copy a hard sentence." << std::endl << std::endl;
         selection = intValidate(1, 3);
-        if (selection == 1) {
+        if (selection == 2) {
             easy();
-        } else if (selection == 2) {
+        }
+        else if (selection == 3) {
             hard();
-        } else {
-
         }
     }
 }

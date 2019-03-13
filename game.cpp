@@ -77,7 +77,7 @@ Space * Game::createBoard(){
     myWork = new Work("work1", myBag);
     myPetStore = new Space("pet store", myBag);
     mySeniorCenter = new Space("senior center", myBag);
-    myStreet = new Space("street", myBag);
+    myStreet = new Street("street1", myBag);
     mySupplyStore = new Space("supply store", myBag);
     myCasino = new Space("casino", myBag);
     myPark = new Space("park", myBag);
