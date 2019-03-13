@@ -19,19 +19,20 @@ Work::~Work() {
 }
 
 void Work::action() {
-    std::cout << "What would you like to do?" << std::endl;
-    std::cout << "1. Copy an easy sentence." << std::endl;
-    std::cout << "2. Copy a hard sentence." << std::endl;
-    std::cout << "3. Leave work." << std::endl;
-    int selection = intValidate(1, 3);
-    if (selection == 1) {
-        easy();
-    }
-    else if (selection == 2) {
-        hard();
-    }
-    else {
+    int selection = 0;
+    while (selection != 3) {
+        std::cout << "What would you like to do?" << std::endl;
+        std::cout << "1. Copy an easy sentence." << std::endl;
+        std::cout << "2. Copy a hard sentence." << std::endl;
+        std::cout << "3. Leave work." << std::endl << std::endl;
+        selection = intValidate(1, 3);
+        if (selection == 1) {
+            easy();
+        } else if (selection == 2) {
+            hard();
+        } else {
 
+        }
     }
 }
 
