@@ -37,8 +37,7 @@ void Work::action() {
 
 void Work::easy() {
     std::cout << "Please type the following sentence exactly." << std::endl;
-    //int sentence = rand() % 3;
-    int sentence = 0;
+    int sentence = rand() % 5;
     std::string input;
     switch(sentence){
         case 0: {
@@ -47,17 +46,64 @@ void Work::easy() {
             if (input == "Eos aocbl qibmzh fobb.") {
                 std::cout << "Excellent work.  You have earned $10." << std::endl;
                 theBag->increaseMoney(10);
-                std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl;
+                std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
             }
             else {
-                std::cout << "The sentences do not match." << std::endl;
+                std::cout << "The sentences do not match." << std::endl << std::endl;
             }
+            break;
         }
         case 1: {
-
+            std::cout << "Yzri bmfdyu och." << std::endl;
+            std::getline(std::cin, input);
+            if (input == "Yzri bmfdyu och.") {
+                std::cout << "Excellent work.  You have earned $10." << std::endl;
+                theBag->increaseMoney(10);
+                std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
+            }
+            else {
+                std::cout << "The sentences do not match." << std::endl << std::endl;
+            }
+            break;
         }
         case 2: {
-
+            std::cout << "Mzxgcy oai a j hn." << std::endl;
+            std::getline(std::cin, input);
+            if (input == "Mzxgcy oai a j hn.") {
+                std::cout << "Excellent work.  You have earned $10." << std::endl;
+                theBag->increaseMoney(10);
+                std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
+            }
+            else {
+                std::cout << "The sentences do not match." << std::endl << std::endl;
+            }
+            break;
+        }
+        case 3: {
+            std::cout << "L karno magi." << std::endl;
+            std::getline(std::cin, input);
+            if (input == "L karno magi.") {
+                std::cout << "Excellent work.  You have earned $10." << std::endl;
+                theBag->increaseMoney(10);
+                std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
+            }
+            else {
+                std::cout << "The sentences do not match." << std::endl << std::endl;
+            }
+            break;
+        }
+        case 4: {
+            std::cout << "Flqm g skzic." << std::endl;
+            std::getline(std::cin, input);
+            if (input == "Flqm g skzic.") {
+                std::cout << "Excellent work.  You have earned $10." << std::endl;
+                theBag->increaseMoney(10);
+                std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
+            }
+            else {
+                std::cout << "The sentences do not match." << std::endl << std::endl;
+            }
+            break;
         }
 
     }
