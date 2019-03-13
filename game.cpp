@@ -51,7 +51,7 @@ void Game::intro(){
               << "before you can go home to your cats." << std::endl << std::endl;
     std::cout << "You work at a translation company copying words you don't understand." << std::endl;
     std::cout << "You earn $10 for every sentence that you type correctly." << std::endl;
-    std::cout << "If the language is particularly difficult, you earn $15 per sentence." << std::endl << std::endl;
+    std::cout << "If the language is particularly difficult, you earn $20 per sentence." << std::endl << std::endl;
     std::cout << "Before you leave today you would like to earn at least $50." << std::endl << std::endl;
 }
 

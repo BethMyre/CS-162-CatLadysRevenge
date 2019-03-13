@@ -105,10 +105,78 @@ void Work::easy() {
             }
             break;
         }
-
     }
 }
 
 void Work::hard() {
-
+    std::cout << "Please type the following sentence exactly." << std::endl;
+    int sentence = rand() % 5;
+    std::string input;
+    switch(sentence){
+        case 0: {
+            std::cout << "(@* @& ^%." << std::endl;
+            std::getline(std::cin, input);
+            if (input == "(@* @& ^%.") {
+                std::cout << "Excellent work.  You have earned $20." << std::endl;
+                theBag->increaseMoney(20);
+                std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
+            }
+            else {
+                std::cout << "The sentences do not match." << std::endl << std::endl;
+            }
+            break;
+        }
+        case 1: {
+            std::cout << "!#%*#( ^^." << std::endl;
+            std::getline(std::cin, input);
+            if (input == "!#%*#( ^^.") {
+                std::cout << "Excellent work.  You have earned $20." << std::endl;
+                theBag->increaseMoney(20);
+                std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
+            }
+            else {
+                std::cout << "The sentences do not match." << std::endl << std::endl;
+            }
+            break;
+        }
+        case 2: {
+            std::cout << "^$ #&@ (&^@@." << std::endl;
+            std::getline(std::cin, input);
+            if (input == "^$ #&@ (&^@@.") {
+                std::cout << "Excellent work.  You have earned $20." << std::endl;
+                theBag->increaseMoney(20);
+                std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
+            }
+            else {
+                std::cout << "The sentences do not match." << std::endl << std::endl;
+            }
+            break;
+        }
+        case 3: {
+            std::cout << "*&#@." << std::endl;
+            std::getline(std::cin, input);
+            if (input == "*&#@..") {
+                std::cout << "Excellent work.  You have earned $20." << std::endl;
+                theBag->increaseMoney(20);
+                std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
+            }
+            else {
+                std::cout << "The sentences do not match." << std::endl << std::endl;
+            }
+            break;
+        }
+        case 4: {
+            std::cout << "& ^ $ @#$." << std::endl;
+            std::getline(std::cin, input);
+            if (input == "& ^ $ @#$.") {
+                std::cout << "Excellent work.  You have earned $20." << std::endl;
+                theBag->increaseMoney(20);
+                std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
+            }
+            else {
+                std::cout << "The sentences do not match." << std::endl << std::endl;
+            }
+            break;
+        }
+    }
 }
