@@ -31,6 +31,9 @@ private:
     //Cat lady's bag
     Bag * myBag;
 
+    //Int used to track time
+    int time;
+
     Space * createBoard();
     void destroyBoard(Space * home);    //Should this be Space * &home ?
     void intro();
@@ -41,6 +44,7 @@ public:
     void play();
     int start();
     int again();
+    void displayTime();
 
 };
 
