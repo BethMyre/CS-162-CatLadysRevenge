@@ -155,7 +155,7 @@ void Work::hard() {
         case 3: {
             std::cout << "*&#@." << std::endl;
             std::getline(std::cin, input);
-            if (input == "*&#@..") {
+            if (input == "*&#@.") {
                 std::cout << "Excellent work.  You have earned $20." << std::endl;
                 theBag->increaseMoney(20);
                 std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;

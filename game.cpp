@@ -22,15 +22,18 @@ Game::Game() {
     myCasino = nullptr;
     myPark = nullptr;
     myFurnitureFactory = nullptr;
-    myBag = new Bag;
+    myBag = nullptr;
 }
 
 void Game::play(){
+    myBag = new Bag;
     playerPtr = createBoard();
     intro();
     playerPtr->action();
 
+
     destroyBoard(myHome);
+    delete myBag;
 }
 
 int Game::start(){
