@@ -1,4 +1,3 @@
-
 /*******************************************************************************
  ** Author: Beth Myre
  ** Date:
@@ -12,7 +11,7 @@
 
 Street::Street (Bag * baggie)
         : Space(baggie) {
-
+    catHere = 0;
 }
 
 Street::~Street() {

@@ -15,13 +15,11 @@ Game::Game() {
     playerPtr = nullptr;
     myHome = nullptr;
     myWork = nullptr;
-    myPetStore = nullptr;
     mySeniorCenter = nullptr;
     myStreet = nullptr;
-    mySupplyStore = nullptr;
+    myStore = nullptr;
     myCasino = nullptr;
     myPark = nullptr;
-    myFurnitureFactory = nullptr;
     myBag = nullptr;
     theTime = 0;
 }
@@ -91,24 +89,20 @@ Space * Game::createBoard(){
     //Dynamically allocate spaces
     myHome = new Space(myBag);
     myWork = new Work(myBag);
-    myPetStore = new Space(myBag);
     mySeniorCenter = new Space(myBag);
     myStreet = new Street(myBag);
-    mySupplyStore = new Space(myBag);
+    myStore = new Space(myBag);
     myCasino = new Space(myBag);
-    myPark = new Space(myBag);
-    myFurnitureFactory = new Space(myBag);
+    myPark = new Park(myBag);
 
     //Make spaces point to each other
-    myFurnitureFactory->setRight(myWork);
-    myWork->setLeft(myFurnitureFactory);
     myWork->setBottom(myStreet);
-    myPetStore->setBottom(mySupplyStore);
     mySeniorCenter->setRight(myStreet);
     myStreet->setLeft(mySeniorCenter);
     myStreet->setTop(myWork);
-    myStreet->setRight(mySupplyStore);
+    myStreet->setRight(myStore);
     myStreet->setBottom(myPark);
+    myStore->setLeft(myStreet);
     myCasino->setRight(myPark);
     myPark->setLeft(myCasino);
     myPark->setTop(myStreet);
@@ -121,13 +115,11 @@ Space * Game::createBoard(){
 void Game::destroyBoard(Space * home){
     delete myHome;
     delete myWork;
-    delete myPetStore;
     delete mySeniorCenter;
     delete myStreet;
-    delete mySupplyStore;
+    delete myStore;
     delete myCasino;
     delete myPark;
-    delete myFurnitureFactory;
 }
 
 void Game::printMap(){

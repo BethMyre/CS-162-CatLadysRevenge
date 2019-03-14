@@ -10,6 +10,7 @@
 #include "space.hpp"
 #include "work.hpp"
 #include "street.hpp"
+#include "park.hpp"
 #include "bag.hpp"
 
 class Game {
@@ -21,13 +22,11 @@ private:
     //All of the spaces on the board
     Space * myHome;
     Space * myWork;
-    Space * myPetStore;
     Space * mySeniorCenter;
     Space * myStreet;
-    Space * mySupplyStore;
+    Space * myStore;
     Space * myCasino;
     Space * myPark;
-    Space * myFurnitureFactory;
 
     //Cat lady's bag
     Bag * myBag;

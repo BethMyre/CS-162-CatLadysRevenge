@@ -19,6 +19,7 @@ protected:
     Space * bottom;
     Bag * theBag;
     bool hereBefore;
+    bool catHere;
 
 public:
     Space(Bag *);
