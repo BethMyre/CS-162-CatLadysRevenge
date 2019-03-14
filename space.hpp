@@ -18,6 +18,7 @@ protected:
     Space * left;
     Space * bottom;
     Bag * theBag;
+    bool hereBefore;
 
 public:
     Space(Bag *);

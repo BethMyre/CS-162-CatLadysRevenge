@@ -22,18 +22,35 @@ int Work::action() {
     int selection = 0;
     while (selection != 1) {
         std::cout << "What would you like to do?" << std::endl;
-        std::cout << "1. Leave work and step out into the street." << std::endl;
+        std::cout << "1. Leave work." << std::endl;
         std::cout << "2. Copy an easy sentence." << std::endl;
         std::cout << "3. Copy a hard sentence." << std::endl << std::endl;
         selection = intValidate(1, 3);
-        if (selection == 2) {
+        if (selection == 1) {
+            if (hereBefore == 0) {
+                hereBefore = 1;
+                return 4;
+            }
+            else{
+                std::cout << "Where would you like to go?" << std::endl;
+                std::cout << "1. The street." << std::endl;
+                std::cout << "2. The furniture factory connected to your office." << std::endl;
+                int choice = intValidate(1, 2);
+                if (choice == 1) {
+                    return 4;
+                }
+                if (choice == 2) {
+                    return 3;
+                }
+            }
+        }
+        else if (selection == 2) {
             easy();
         }
         else if (selection == 3) {
             hard();
         }
     }
-    return 4;
 }
 
 void Work::easy() {

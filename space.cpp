@@ -15,6 +15,7 @@ Space::Space(Bag * baggie){
     left = nullptr;
     bottom = nullptr;
     theBag = baggie;
+    hereBefore = 0;
 }
 
 Space::~Space(){
