@@ -88,7 +88,7 @@ int Game::again(){
 
 Space * Game::createBoard(){
     //Dynamically allocate spaces
-    myHome = new Space(myBag);
+    myHome = new Home(myBag);
     myWork = new Work(myBag);
     mySeniorCenter = new Space(myBag);
     myStreet = new Street(myBag);

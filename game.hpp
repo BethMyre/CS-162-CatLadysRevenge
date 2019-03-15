@@ -11,6 +11,7 @@
 #include "work.hpp"
 #include "street.hpp"
 #include "park.hpp"
+#include "home.hpp"
 #include "bag.hpp"
 
 class Game {
