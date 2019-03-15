@@ -29,20 +29,17 @@ int Park::action() {
         std::cout << "What would you like to do?" << std::endl;
         if (hereBefore == 0 || (hereBefore == 1 && catHere == 0)) {
             std::cout << "1. Leave the park." << std::endl;
-            std::cout << "2. View map." << std::endl;
-            selection = intValidate(1, 2);
-        } else if (hereBefore == 1 && catHere == 1) {
+            selection = intValidate(1, 1);
+        }
+        else if (hereBefore == 1 && catHere == 1) {
             std::cout << "1. Leave the park." << std::endl;
-            std::cout << "2. View map." << std::endl;
-            std::cout << "3. Try to get Snowball out of the tree." << std::endl;
-            selection = intValidate(1, 3);
+            std::cout << "2. Try to get Snowball out of the tree." << std::endl;
+            selection = intValidate(1, 2);
         }
         if (selection == 2) {
-            std::cout << "//Need to show map here." << std::endl;
-        }
-        if (selection == 3) {
             std::cout << "//Cat rescue scene here." << std::endl;
         }
+
     }
     std::cout << "Where would you like to go?" << std::endl;
     if (hereBefore == 0) {

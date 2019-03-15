@@ -26,7 +26,7 @@ int Street::action() {
     while (selection != 1) {
         std::cout << "What would you like to do?" << std::endl;
         std::cout << "1. Leave the street." << std::endl;
-        std::cout << "2. View map." << std::endl << std::endl;
+        std::cout << "2. View the map of town posted on a telephone pole." << std::endl << std::endl;
         selection = intValidate(1, 2);
         if (selection == 1) {
             std::cout << "Where would you like to go?" << std::endl;
@@ -46,7 +46,22 @@ int Street::action() {
             }
         }
         else if (selection == 2) {
-            std::cout << "//Need to print map here." << std::endl;
+            std::cout << "                     **********************                     " << std::endl;
+            std::cout << "                     *                    *                     " << std::endl;
+            std::cout << "                     *     TRANSLATION    *                     " << std::endl;
+            std::cout << "                     *      EMPORIUM      *                     " << std::endl;
+            std::cout << "                     *                    *                     " << std::endl;
+            std::cout << "******************************    ******************************" << std::endl;
+            std::cout << "*                    *                    *                    *" << std::endl;
+            std::cout << "*       SENIOR               STREET                STORE       *" << std::endl;
+            std::cout << "*       CENTER                                                 *" << std::endl;
+            std::cout << "*                    *                    *                    *" << std::endl;
+            std::cout << "**********************                    **********************" << std::endl;
+            std::cout << "*                    *                    *                    *" << std::endl;
+            std::cout << "*       CASINO                PARK              CAT LADY'S     *" << std::endl;
+            std::cout << "*                                                 HOUSE        *" << std::endl;
+            std::cout << "*                    *                    *                    *" << std::endl;
+            std::cout << "****************************************************************" << std::endl;
         }
     }
 }

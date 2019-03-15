@@ -25,7 +25,7 @@ int Work::action() {
         std::cout << "1. Leave work." << std::endl;
         std::cout << "2. Copy an easy sentence." << std::endl;
         std::cout << "3. Copy a hard sentence." << std::endl;
-        std::cout << "4. Overlook the fact that this game includes free-form input,"
+        std::cout << "4. Overlook the fact that this game includes illegal free-form input,"
             << " and get $50 for being a TA." << std::endl << std::endl;
         selection = intValidate(1, 4);
         if (selection == 1) {
