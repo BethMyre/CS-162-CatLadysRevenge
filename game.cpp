@@ -32,6 +32,7 @@ void Game::play(){
     int selection = 0;
     while (theTime <= 120) {
         selection = playerPtr->action();
+        displayTime();
         if (selection == 1){
             moveTop();
         }
@@ -74,7 +75,7 @@ void Game::intro(){
     std::cout << "You work at a translation company copying words you don't understand." << std::endl;
     std::cout << "You earn $10 for every sentence that you type correctly." << std::endl;
     std::cout << "If the language is particularly difficult, you earn $20 per sentence." << std::endl << std::endl;
-    std::cout << "Before you leave today you'd like to earn at least $50." << std::endl << std::endl;
+    std::cout << "Before you leave today you'd like to earn at least $50." << std::endl;
 }
 
 int Game::again(){
@@ -128,7 +129,8 @@ void Game::printMap(){
 
 void Game::displayTime() {
     //Need to make minutes alway be 2 digits wide
-    std::cout << "The time is now " << 5 + theTime/60 << ":" << theTime%60 << std::endl << std::endl;
+    std::cout << std::endl << "The time is now " << 5 + theTime/60 << ":" << theTime%60
+        << "." << std::endl << std::endl;
 }
 
 void Game::moveTop() {

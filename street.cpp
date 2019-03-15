@@ -21,6 +21,7 @@ Street::~Street() {
 int Street::action() {
     int selection = 0;
     std::cout << "You are now standing in the street." << std::endl;
+
     std::cout << "In order to get home, you need to walk through the park." << std::endl;
     while (selection != 1) {
         std::cout << "What would you like to do?" << std::endl;

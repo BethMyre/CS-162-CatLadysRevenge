@@ -24,8 +24,10 @@ int Work::action() {
         std::cout << "What would you like to do?" << std::endl;
         std::cout << "1. Leave work." << std::endl;
         std::cout << "2. Copy an easy sentence." << std::endl;
-        std::cout << "3. Copy a hard sentence." << std::endl << std::endl;
-        selection = intValidate(1, 3);
+        std::cout << "3. Copy a hard sentence." << std::endl;
+        std::cout << "4. Overlook the fact that this game includes free-form input,"
+            << " and get $50 for being a TA." << std::endl << std::endl;
+        selection = intValidate(1, 4);
         if (selection == 1) {
             hereBefore = 1;
             return 4;
@@ -35,6 +37,10 @@ int Work::action() {
         }
         else if (selection == 3) {
             hard();
+        }
+        else if (selection == 4) {
+            theBag->increaseMoney(50);
+            std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
         }
     }
 }
