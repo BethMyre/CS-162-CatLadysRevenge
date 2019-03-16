@@ -10,6 +10,7 @@
 Bag::Bag() {
     money = 0;
     tuna = 0;
+    snowball = 0;
 }
 
 int Bag::getMoney() {
@@ -30,4 +31,12 @@ bool Bag::getTuna() {
 
 void Bag::setTuna(bool tunaPresent) {
     tuna = tunaPresent;
+}
+
+bool Bag::getSnowball() {
+    return snowball;
+}
+
+void Bag::setSnowball(bool snowballPresent) {
+    snowball = snowballPresent;
 }

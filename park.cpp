@@ -37,7 +37,19 @@ int Park::action() {
             selection = intValidate(1, 2);
         }
         if (selection == 2) {
-            std::cout << "//Cat rescue scene here." << std::endl;
+            std::cout << "You approach the tree.  Snowball climbs even higher, clearly terrified." << std::endl;
+            std::cout << "\"Here kitty kitty!\" you call." << std::endl;
+            if (theBag->getTuna() == 0) {
+                std::cout << "She doesn't move.  "
+                    << "If only you had some way to tempt her to come down." << std::endl << std::endl;
+            }
+            else {
+                std::cout << "You can tell Snowball needs extra encouragement, so you take the can " << std::endl;
+                std::cout << "of tuna out of your purse and open it.  Snowball slowly climbs down the tree." << std::endl;
+                std::cout << "You let her eat it, then scoop her up and put her into your purse." << std::endl << std::endl;
+                theBag->setTuna(0);
+                theBag->setSnowball(1);
+            }
         }
 
     }

@@ -16,6 +16,9 @@ private:
     int money;
     bool tuna;
 
+    //Cats
+    bool snowball;
+
 public:
     Bag();
     int getMoney();
@@ -23,6 +26,8 @@ public:
     void decreaseMoney(int);
     bool getTuna();
     void setTuna(bool);
+    bool getSnowball();
+    void setSnowball(bool);
 
 };
 
