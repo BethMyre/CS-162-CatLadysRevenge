@@ -30,7 +30,7 @@ void Game::play(){
     playerPtr = createBoard();
     intro();
     int selection = 0;
-    while (theTime <= 120) {
+    while (theTime <= 180) {
         selection = playerPtr->action();
         displayTime();
         if (selection == 1){
@@ -70,12 +70,12 @@ void Game::intro(){
     std::cout <<"***************************************" << std::endl << std::endl;
     std::cout << "You're a nice cat lady, enjoying the simple life." << std::endl;
     std::cout << "You just have a little more work to finish up before you can go home to your cats." << std::endl;
-    std::cout << "If you're cuddled up on the couch with all of your cats by 7:00 pm in time to " << std::endl;
+    std::cout << "If you're cuddled up on the couch with all of your cats by 8:00 pm in time to " << std::endl;
     std::cout << "watch Wheel of Fortune, you'll be winning at life (and this game)." << std::endl << std::endl;
     std::cout << "You work at a translation company copying words you don't understand." << std::endl;
     std::cout << "You earn $10 for every sentence that you type correctly." << std::endl;
     std::cout << "If the language is particularly difficult, you earn $20 per sentence." << std::endl << std::endl;
-    std::cout << "Before you leave today you'd like to earn at least $50." << std::endl;
+    std::cout << "Before you leave today you'd like to earn at least $50." << std::endl << std::endl;
 }
 
 int Game::again(){

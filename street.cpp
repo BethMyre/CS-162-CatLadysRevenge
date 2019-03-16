@@ -26,7 +26,7 @@ int Street::action() {
     while (selection != 1) {
         std::cout << "What would you like to do?" << std::endl;
         std::cout << "1. Leave the street." << std::endl;
-        std::cout << "2. View the map of town posted on a telephone pole." << std::endl << std::endl;
+        std::cout << "2. View a map of town posted on a telephone pole." << std::endl << std::endl;
         selection = intValidate(1, 2);
         if (selection == 1) {
             std::cout << "Where would you like to go?" << std::endl;
