@@ -15,6 +15,8 @@ private:
 
     int money;
     bool tuna;
+    bool mousetraps;
+    bool dog;
 
     //Cats
     bool snowball;
@@ -28,6 +30,10 @@ public:
     void setTuna(bool);
     bool getSnowball();
     void setSnowball(bool);
+    bool getMousetraps();
+    void setMousetraps(bool);
+    bool getDog();
+    void setDog(bool);
 
 };
 
