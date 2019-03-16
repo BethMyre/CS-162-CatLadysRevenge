@@ -9,6 +9,7 @@
 
 Bag::Bag() {
     money = 0;
+    tuna = 0;
 }
 
 int Bag::getMoney() {
@@ -21,4 +22,12 @@ void Bag::increaseMoney(int moreMoney) {
 
 void Bag::decreaseMoney(int lessMoney) {
     money -= lessMoney;
+}
+
+bool Bag::getTuna() {
+    return tuna;
+}
+
+void Bag::setTuna(bool tunaPresent) {
+    tuna = tunaPresent;
 }

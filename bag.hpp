@@ -14,12 +14,15 @@ class Bag {
 private:
 
     int money;
+    bool tuna;
 
 public:
     Bag();
     int getMoney();
     void increaseMoney(int);
     void decreaseMoney(int);
+    bool getTuna();
+    void setTuna(bool);
 
 };
 
