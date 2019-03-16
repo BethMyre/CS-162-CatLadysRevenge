@@ -26,7 +26,7 @@ private:
     Space * mySeniorCenter;
     Space * myStreet;
     Space * myStore;
-    Space * myCasino;
+    Space * myRestaurant;
     Space * myPark;
 
     //Cat lady's bag

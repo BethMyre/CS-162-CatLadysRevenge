@@ -18,7 +18,7 @@ Game::Game() {
     mySeniorCenter = nullptr;
     myStreet = nullptr;
     myStore = nullptr;
-    myCasino = nullptr;
+    myRestaurant = nullptr;
     myPark = nullptr;
     myBag = nullptr;
     theTime = 0;
@@ -93,7 +93,7 @@ Space * Game::createBoard(){
     mySeniorCenter = new Space(myBag);
     myStreet = new Street(myBag);
     myStore = new Space(myBag);
-    myCasino = new Space(myBag);
+    myRestaurant = new Space(myBag);
     myPark = new Park(myBag);
 
     //Make spaces point to each other
@@ -104,8 +104,8 @@ Space * Game::createBoard(){
     myStreet->setRight(myStore);
     myStreet->setBottom(myPark);
     myStore->setLeft(myStreet);
-    myCasino->setRight(myPark);
-    myPark->setLeft(myCasino);
+    myRestaurant->setRight(myPark);
+    myPark->setLeft(myRestaurant);
     myPark->setTop(myStreet);
     myPark->setRight(myHome);
     myHome->setLeft(myPark);
@@ -119,7 +119,7 @@ void Game::destroyBoard(Space * home){
     delete mySeniorCenter;
     delete myStreet;
     delete myStore;
-    delete myCasino;
+    delete myRestaurant;
     delete myPark;
 }
 
