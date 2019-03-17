@@ -24,7 +24,7 @@ private:
     //All of the spaces on the board
     Space * myHome;
     Space * myWork;
-    Space * mySeniorCenter;
+    Space * myDogMan;
     Space * myStreet;
     Space * myStore;
     Space * myRestaurant;
@@ -39,7 +39,6 @@ private:
     Space * createBoard();
     void destroyBoard(Space * home);    //Should this be Space * &home ?
     void intro();
-    void printMap();
 
 public:
     Game();

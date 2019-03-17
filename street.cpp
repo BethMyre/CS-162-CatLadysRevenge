@@ -53,8 +53,8 @@ int Street::action() {
             std::cout << "                     *                    *                     " << std::endl;
             std::cout << "******************************    ******************************" << std::endl;
             std::cout << "*                    *                    *                    *" << std::endl;
-            std::cout << "*       SENIOR               STREET                STORE       *" << std::endl;
-            std::cout << "*       CENTER                                                 *" << std::endl;
+            std::cout << "*      DOG MAN'S             STREET                STORE       *" << std::endl;
+            std::cout << "*        HOUSE                                                 *" << std::endl;
             std::cout << "*                    *                    *                    *" << std::endl;
             std::cout << "**********************                    **********************" << std::endl;
             std::cout << "*                    *                    *                    *" << std::endl;
