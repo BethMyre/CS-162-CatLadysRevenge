@@ -20,39 +20,41 @@ Restaurant::~Restaurant() {
 
 int Restaurant::action() {
     int selection = 0;
-    std::cout << "You enter the restaurant.  Every table is full of diners, laughing and eating." << std::endl;
-    if (hereBefore == 0 && catHere == 1) {
-        std::cout << "A waiter approaches you.  \"Table for one?\" he asks." << std::endl;
-        std::cout << "As he is speaking, you see a small rodent run along the wall." << std::endl;
-        std::cout << "A second later, a hairless cat dashes after it and catches it." << std::endl;
-        std::cout << "And it's not just ANY hairless cat... It's your playful cat Wrinkles and Creases!" << std::endl;
-        std::cout << "\"But sir!\" you say.  \"That's my cat!  Give him back to me!\"." << std::endl;
-        std::cout << "The waiter shakes his head." << std::endl;
-        std::cout << "\"Since that cat arrived earlier today, we've finally started to get "
-        << "our mouse problem under control.\"" << std::endl;
-        std::cout << "We would never let him go without an alternate mouse-catching plan." << std::endl << std::endl;
+    if (catHere == 1) {
+        std::cout << "As you walk into the restaurant, you see a claw arcade game full of stuffed animals." << std::endl;
+        std::cout << "There is movement in the machine.  It's Nibbles, your grey tortoiseshell cat!" << std::endl;
+        std::cout << "On the machine is a sign which reads \"$5 per attempt. 1 in 8 chance of winning.\"" << std::endl;
+        std::cout << "You make eye contact with Nibbles.  She's clearly thinking the same thing you are." << std::endl;
+        std::cout << "If you play the game, she'll try to position herself so that the claw picks her up."
+            << std::endl << std::endl;
     }
-    std::cout << std::endl;
+    else {
+        std::cout << "Since you've already rescued Nibbles, there's nothing for you to do here."
+            << std::endl << std::endl;
+    }
     while (selection != 1) {
         std::cout << "What would you like to do?" << std::endl;
-        if (theBag->getMousetraps() == 1) {
+        if (catHere == 1) {
             std::cout << "1. Leave the restaurant." << std::endl;
-            std::cout << "2. Try to get Snowball out of the tree." << std::endl;
+            std::cout << "2. Play the claw game for $5." << std::endl;
             selection = intValidate(1, 2);
             if (selection == 2) {
-                std::cout << "You approach the tree.  Snowball climbs even higher, clearly terrified." << std::endl;
-                std::cout << "\"Here kitty kitty!\" you call." << std::endl;
-                if (theBag->getTuna() == 0) {
-                    std::cout << "She doesn't move.  "
-                              << "If only you had some way to tempt her to come down." << std::endl << std::endl;
+                if (theBag->getMoney() >= 5){
+                    int num = rand()%8;
+                    if (num == 0) {
+                        std::cout << "The claw gently picks up Nibbles and drops her into the chute. :)" << std::endl;
+                        std::cout << "You put her in your purse." << std::endl;
+                        theBag->setNibbles(1);
+                        catHere = 0;
+                    }
+                    else {
+                        std::cout << "The claw comes up empty. :(" << std::endl;
+                    }
+                    theBag->changeMoney(-5);
+                    std::cout << "You have $" << theBag->getMoney() << " remaining." << std::endl << std::endl;
                 }
                 else {
-                    std::cout << "You can tell Snowball needs extra encouragement, so you take the can " << std::endl;
-                    std::cout << "of tuna out of your purse and open it.  Snowball slowly climbs down the tree." << std::endl;
-                    std::cout << "You let her eat it, then scoop her up and put her into your purse." << std::endl << std::endl;
-                    theBag->setTuna(0);
-                    theBag->setSnowball(1);
-                    catHere = 0;
+                    std::cout << "You do not have enough money to play." << std::endl << std::endl;
                 }
             }
         }
@@ -61,20 +63,8 @@ int Restaurant::action() {
             selection = intValidate(1, 1);
         }
     }
-    std::cout << "Where would you like to go?" << std::endl;
-    if (hereBefore == 0) {
-        std::cout << "1. Home." << std::endl;
-        intValidate(1, 1);
-        hereBefore = 1;
-        return 2;
-    }
-    else {
-        std::cout << "1. To the street." << std::endl;
-        std::cout << "2. Home." << std::endl;
-        std::cout << "3. To the restaurant." << std::endl;
-        int choice = intValidate(1, 3);
-        return choice;
-    }
+    std::cout << "You turn around and leave." << std::endl << std::endl;
+    return 2;
 }
 
 

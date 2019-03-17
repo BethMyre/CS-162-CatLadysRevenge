@@ -11,20 +11,23 @@ Bag::Bag() {
     money = 0;
     tuna = 0;
     mousetraps = 0;
-    dog = 0;
     snowball = 0;
+    nibbles = 0;
 }
 
 int Bag::getMoney() {
     return money;
 }
 
-void Bag::increaseMoney(int moreMoney) {
-    money += moreMoney;
-}
-
-void Bag::decreaseMoney(int lessMoney) {
-    money -= lessMoney;
+int Bag::changeMoney(int diffMoney) {
+    money += diffMoney;
+    if (money > 100){
+        money = 100;
+        return 1;
+    }
+    else {
+        return 0;
+    }
 }
 
 bool Bag::getTuna() {
@@ -43,18 +46,10 @@ void Bag::setSnowball(bool snowballPresent) {
     snowball = snowballPresent;
 }
 
-bool Bag::getMousetraps() {
-    return mousetraps;
+bool Bag::getNibbles() {
+    return nibbles;
 }
 
-void Bag::setMousetraps(bool mousetrapsPresent) {
-    mousetraps = mousetrapsPresent;
-}
-
-bool Bag::getDog() {
-    return dog;
-}
-
-void Bag::setDog(bool dogPresent) {
-    dog = dogPresent;
+void Bag::setNibbles(bool nibblesPresent) {
+    nibbles = nibblesPresent;
 }

@@ -20,20 +20,18 @@ private:
 
     //Cats
     bool snowball;
+    bool nibbles;
 
 public:
     Bag();
     int getMoney();
-    void increaseMoney(int);
-    void decreaseMoney(int);
+    int changeMoney(int);
     bool getTuna();
     void setTuna(bool);
     bool getSnowball();
     void setSnowball(bool);
-    bool getMousetraps();
-    void setMousetraps(bool);
-    bool getDog();
-    void setDog(bool);
+    bool getNibbles();
+    void setNibbles(bool);
 
 };
 

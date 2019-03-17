@@ -38,7 +38,10 @@ int Work::action() {
             hard();
         }
         else if (selection == 4) {
-            theBag->increaseMoney(50);
+            int test = theBag->changeMoney(50);
+            if (test == 1){
+                std::cout << "Strangely, although your purse can hold three cats, it can only hold $100." << std::endl;
+            }
             std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
         }
     }
@@ -54,7 +57,10 @@ void Work::easy() {
             std::getline(std::cin, input);
             if (input == "Eos aocbl qibmzh fobb.") {
                 std::cout << "Excellent work.  You have earned $10." << std::endl;
-                theBag->increaseMoney(10);
+                int test = theBag->changeMoney(10);
+                if (test == 1){
+                    std::cout << "Strangely, although your purse can hold three cats, it can only hold $100." << std::endl;
+                }
                 std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
             }
             else {
@@ -67,7 +73,10 @@ void Work::easy() {
             std::getline(std::cin, input);
             if (input == "Yzri bmfdyu och.") {
                 std::cout << "Excellent work.  You have earned $10." << std::endl;
-                theBag->increaseMoney(10);
+                int test = theBag->changeMoney(10);
+                if (test == 1){
+                    std::cout << "Strangely, although your purse can hold three cats, it can only hold $100." << std::endl;
+                }
                 std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
             }
             else {
@@ -80,7 +89,10 @@ void Work::easy() {
             std::getline(std::cin, input);
             if (input == "Mzxgcy oai a j hn.") {
                 std::cout << "Excellent work.  You have earned $10." << std::endl;
-                theBag->increaseMoney(10);
+                int test = theBag->changeMoney(10);
+                if (test == 1){
+                    std::cout << "Strangely, although your purse can hold three cats, it can only hold $100." << std::endl;
+                }
                 std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
             }
             else {
@@ -93,7 +105,10 @@ void Work::easy() {
             std::getline(std::cin, input);
             if (input == "L karno magi.") {
                 std::cout << "Excellent work.  You have earned $10." << std::endl;
-                theBag->increaseMoney(10);
+                int test = theBag->changeMoney(10);
+                if (test == 1){
+                    std::cout << "Strangely, although your purse can hold three cats, it can only hold $100." << std::endl;
+                }
                 std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
             }
             else {
@@ -106,7 +121,10 @@ void Work::easy() {
             std::getline(std::cin, input);
             if (input == "Flqm g skzic.") {
                 std::cout << "Excellent work.  You have earned $10." << std::endl;
-                theBag->increaseMoney(10);
+                int test = theBag->changeMoney(10);
+                if (test == 1){
+                    std::cout << "Strangely, although your purse can hold three cats, it can only hold $100." << std::endl;
+                }
                 std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
             }
             else {
@@ -127,7 +145,10 @@ void Work::hard() {
             std::getline(std::cin, input);
             if (input == "(@* @& ^%.") {
                 std::cout << "Excellent work.  You have earned $20." << std::endl;
-                theBag->increaseMoney(20);
+                int test = theBag->changeMoney(20);
+                if (test == 1){
+                    std::cout << "Strangely, although your purse can hold three cats, it can only hold $100." << std::endl;
+                }
                 std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
             }
             else {
@@ -140,7 +161,10 @@ void Work::hard() {
             std::getline(std::cin, input);
             if (input == "!#%*#( ^^.") {
                 std::cout << "Excellent work.  You have earned $20." << std::endl;
-                theBag->increaseMoney(20);
+                int test = theBag->changeMoney(20);
+                if (test == 1){
+                    std::cout << "Strangely, although your purse can hold three cats, it can only hold $100." << std::endl;
+                }
                 std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
             }
             else {
@@ -153,7 +177,10 @@ void Work::hard() {
             std::getline(std::cin, input);
             if (input == "^$ #&@ (&^@@.") {
                 std::cout << "Excellent work.  You have earned $20." << std::endl;
-                theBag->increaseMoney(20);
+                int test = theBag->changeMoney(20);
+                if (test == 1){
+                    std::cout << "Strangely, although your purse can hold three cats, it can only hold $100." << std::endl;
+                }
                 std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
             }
             else {
@@ -166,7 +193,10 @@ void Work::hard() {
             std::getline(std::cin, input);
             if (input == "*&#@.") {
                 std::cout << "Excellent work.  You have earned $20." << std::endl;
-                theBag->increaseMoney(20);
+                int test = theBag->changeMoney(20);
+                if (test == 1){
+                    std::cout << "Strangely, although your purse can hold three cats, it can only hold $100." << std::endl;
+                }
                 std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
             }
             else {
@@ -179,7 +209,10 @@ void Work::hard() {
             std::getline(std::cin, input);
             if (input == "& ^ $ @#$.") {
                 std::cout << "Excellent work.  You have earned $20." << std::endl;
-                theBag->increaseMoney(20);
+                int test = theBag->changeMoney(20);
+                if (test == 1){
+                    std::cout << "Strangely, although your purse can hold three cats, it can only hold $100." << std::endl;
+                }
                 std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
             }
             else {
