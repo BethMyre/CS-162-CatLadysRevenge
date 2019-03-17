@@ -12,6 +12,7 @@
 #include "street.hpp"
 #include "park.hpp"
 #include "home.hpp"
+#include "restaurant.hpp"
 #include "bag.hpp"
 
 class Game {

@@ -93,7 +93,7 @@ Space * Game::createBoard(){
     mySeniorCenter = new Space(myBag);
     myStreet = new Street(myBag);
     myStore = new Space(myBag);
-    myRestaurant = new Space(myBag);
+    myRestaurant = new Restaurant(myBag);
     myPark = new Park(myBag);
 
     //Make spaces point to each other

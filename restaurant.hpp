@@ -4,20 +4,20 @@
  ** Description:
 *******************************************************************************/
 
-#ifndef HOME_HPP
-#define HOME_HPP
+#ifndef RESTAURANT_HPP
+#define RESTAURANT_HPP
 
 #include <string>
 #include "space.hpp"
 
-class Home : public Space{
+class Restaurant : public Space{
 
 private:
-    bool snowballHere;
+
 
 public:
-    Home(Bag *);
-    ~Home();
+    Restaurant(Bag *);
+    ~Restaurant();
 
     int action();
 
