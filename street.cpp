@@ -38,8 +38,8 @@ int Street::action() {
             }
             else{
                 std::cout << "1. Back to work." << std::endl;
-                std::cout << "2. To the supply store." << std::endl;
-                std::cout << "3. To the senior center." << std::endl;
+                std::cout << "2. To the store." << std::endl;
+                std::cout << "3. To Dog Man's house." << std::endl;
                 std::cout << "4. To the park." << std::endl;
                 int choice = intValidate(1, 4);
                 return choice;

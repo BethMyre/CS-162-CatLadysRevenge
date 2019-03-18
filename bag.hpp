@@ -21,6 +21,7 @@ private:
     //Cats
     bool snowball;
     bool nibbles;
+    bool creases;
 
 public:
     Bag();
@@ -32,6 +33,8 @@ public:
     void setSnowball(bool);
     bool getNibbles();
     void setNibbles(bool);
+    bool getCreases();
+    void setCreases(bool);
 
 };
 

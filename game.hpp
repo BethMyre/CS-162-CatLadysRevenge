@@ -13,6 +13,7 @@
 #include "park.hpp"
 #include "home.hpp"
 #include "restaurant.hpp"
+#include "store.hpp"
 #include "bag.hpp"
 
 class Game {

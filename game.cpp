@@ -92,7 +92,7 @@ Space * Game::createBoard(){
     myWork = new Work(myBag);
     myDogMan = new Space(myBag);
     myStreet = new Street(myBag);
-    myStore = new Space(myBag);
+    myStore = new Store(myBag);
     myRestaurant = new Restaurant(myBag);
     myPark = new Park(myBag);
 

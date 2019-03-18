@@ -25,8 +25,8 @@ int Home::action() {
     if (hereBefore == 0) {
         std::cout << "You walk towards your house... Oh no!" << std::endl;
         std::cout << "Someone has opened your front door and let your three indoor cats escape!" << std::endl;
-        std::cout << "Judging by the giant paw prints all over your front lawn, it must have been Dog Man." << std::endl;
-        std::cout << "He is not very smart." << std::endl << std::endl;
+        std::cout << "Judging by the giant paw prints all over your front lawn, it must have been Dog Man." << std::endl
+            << std::endl;
         std::cout << "Quickly!  You must find all of your cats, bring them home," << std::endl;
         std::cout << "exact revenge on Dog Man, and be back in time for bed at 8:30." << std::endl << std::endl;
         std::cout << "You leave your house and go back to the park..." << std::endl;

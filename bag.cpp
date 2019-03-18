@@ -13,6 +13,7 @@ Bag::Bag() {
     mousetraps = 0;
     snowball = 0;
     nibbles = 0;
+    creases = 0;
 }
 
 int Bag::getMoney() {
@@ -52,4 +53,12 @@ bool Bag::getNibbles() {
 
 void Bag::setNibbles(bool nibblesPresent) {
     nibbles = nibblesPresent;
+}
+
+bool Bag::getCreases() {
+    return creases;
+}
+
+void Bag::setCreases(bool creasesPresent) {
+    creases = creasesPresent;
 }
