@@ -54,7 +54,3 @@ void Space::setLeft(Space * left){
 void Space::setBottom(Space * bottom){
     this->bottom = bottom;
 }
-
-int Space::action() {
-    return 0;
-}

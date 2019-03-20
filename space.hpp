@@ -35,7 +35,7 @@ public:
     void setLeft(Space *);
     void setBottom(Space *);
 
-    virtual int action();
+    virtual int action() = 0;
 
 };
 

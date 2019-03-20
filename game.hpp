@@ -14,6 +14,7 @@
 #include "home.hpp"
 #include "restaurant.hpp"
 #include "store.hpp"
+#include "dogMan.hpp"
 #include "bag.hpp"
 
 class Game {
