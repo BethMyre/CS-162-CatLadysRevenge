@@ -20,7 +20,6 @@ Home::~Home() {
 }
 
 int Home::action() {
-    int selection = 0;
     //This scene only happens the first time you go to your house.
     if (hereBefore == 0) {
         std::cout << "You walk towards your house... Oh no!" << std::endl;
