@@ -26,8 +26,8 @@ int Work::action() {
         std::cout <<"          CAT LADY'S REVENGE" << std::endl;
         std::cout <<"***************************************" << std::endl << std::endl;
         std::cout << "You're a nice cat lady, enjoying the simple life." << std::endl;
-        std::cout << "You just have a little more work to finish up before you can go home to your cats." << std::endl;
-        std::cout << "If you're cuddled up in bed with your cats by 8:30, you'll be winning at life (and this game)."
+        std::cout << "You just have a little more work to finish up before you can go home to your three cats." << std::endl;
+        std::cout << "If you're cuddled up in bed with them by 8:30, you'll be winning at life (and this game)."
             << std::endl << std::endl;
         std::cout << "You work at a translation company copying words you don't understand." << std::endl;
         std::cout << "You earn $10 for every sentence that you type correctly." << std::endl;

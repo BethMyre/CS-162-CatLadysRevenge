@@ -21,11 +21,11 @@ Park::~Park() {
 
 int Park::action() {
     int selection = 0;
-    std::cout << "You are now standing in the park." << std::endl;
+    std::cout << "You are now standing in the park." << std::endl << std::endl;
 
     //You don't see Snowball the first time you pass through the park on your way home from work
     if (hereBefore == 1 && catHere == 1) {
-        std::cout << "You see a white cat in a tree.  It's your sweet Snowball!" << std::endl;
+        std::cout << "You see a white cat in a tree.  It's your sweet Snowball!" << std::endl << std::endl;
     }
 
     while (selection != 1) {
