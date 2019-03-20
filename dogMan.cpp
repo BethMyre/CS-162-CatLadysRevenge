@@ -36,7 +36,7 @@ int DogMan::action() {
         std::cout << "You reach into your purse and take out the hairballs and vomit." << std::endl;
         std::cout << "Gleefully, you shove it all into Dog Man's mailbox." << std::endl;
         std::cout << "Mwahahaha." << std::endl;
-        std::cout << "Now all you need to do it make it back home in time for bed by 8:00." << std::endl;
+        std::cout << "Now all you need to do is make it back home in time for bed by 8:00." << std::endl;
 
         //This will allow the game to know whether this scene has already happened.
         theBag->setRevenge(1);
