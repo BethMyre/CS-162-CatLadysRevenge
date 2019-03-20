@@ -13,13 +13,14 @@
 class Street : public Space{
 
 private:
-
+    void displayMap();
 
 public:
     Street(Bag *);
     ~Street();
 
     int action();
+    void displayPurse(Bag * baggie);
 
 };
 

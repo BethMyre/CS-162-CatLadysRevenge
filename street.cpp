@@ -26,8 +26,9 @@ int Street::action() {
     while (selection != 1) {
         std::cout << "What would you like to do?" << std::endl;
         std::cout << "1. Leave the street." << std::endl;
-        std::cout << "2. View a map of town posted on a telephone pole." << std::endl << std::endl;
-        selection = intValidate(1, 2);
+        std::cout << "2. View a map of town posted on a telephone pole." << std::endl;
+        std::cout << "3. Look at the contents of your purse." << std::endl << std::endl;
+        selection = intValidate(1, 3);
         if (selection == 1) {
             std::cout << "Where would you like to go?" << std::endl;
             if (hereBefore == 0) {
@@ -46,25 +47,48 @@ int Street::action() {
             }
         }
         else if (selection == 2) {
-            std::cout << "                     **********************                     " << std::endl;
-            std::cout << "                     *                    *                     " << std::endl;
-            std::cout << "                     *     TRANSLATION    *                     " << std::endl;
-            std::cout << "                     *      EMPORIUM      *                     " << std::endl;
-            std::cout << "                     *                    *                     " << std::endl;
-            std::cout << "******************************    ******************************" << std::endl;
-            std::cout << "*                    *                    *                    *" << std::endl;
-            std::cout << "*      DOG MAN'S             STREET                STORE       *" << std::endl;
-            std::cout << "*        HOUSE                                                 *" << std::endl;
-            std::cout << "*                    *                    *                    *" << std::endl;
-            std::cout << "**********************                    **********************" << std::endl;
-            std::cout << "*                    *                    *                    *" << std::endl;
-            std::cout << "*      RESTAURANT             PARK              CAT LADY'S     *" << std::endl;
-            std::cout << "*                                                 HOUSE        *" << std::endl;
-            std::cout << "*                    *                    *                    *" << std::endl;
-            std::cout << "****************************************************************" << std::endl;
+            displayMap();
+        }
+        else if (selection == 3) {
+            displayPurse(theBag);
         }
     }
 }
 
+void Street::displayMap() {
+    std::cout << "                     **********************                     " << std::endl;
+    std::cout << "                     *                    *                     " << std::endl;
+    std::cout << "                     *     TRANSLATION    *                     " << std::endl;
+    std::cout << "                     *      EMPORIUM      *                     " << std::endl;
+    std::cout << "                     *                    *                     " << std::endl;
+    std::cout << "******************************    ******************************" << std::endl;
+    std::cout << "*                    *                    *                    *" << std::endl;
+    std::cout << "*      DOG MAN'S             STREET                STORE       *" << std::endl;
+    std::cout << "*        HOUSE                                                 *" << std::endl;
+    std::cout << "*                    *                    *                    *" << std::endl;
+    std::cout << "**********************                    **********************" << std::endl;
+    std::cout << "*                    *                    *                    *" << std::endl;
+    std::cout << "*      RESTAURANT             PARK              CAT LADY'S     *" << std::endl;
+    std::cout << "*                                                 HOUSE        *" << std::endl;
+    std::cout << "*                    *                    *                    *" << std::endl;
+    std::cout << "****************************************************************" << std::endl;
+}
 
+void Street::displayPurse(Bag * baggie) {
+    std::cout << std::endl << "Looking in your purse, you find:" << std::endl;
+    std::cout << "$" << baggie->getMoney() << std::endl;
+    if (baggie->getTuna()) {
+        std::cout << "A can of tuna" << std::endl;
+    }
+    if (baggie->getSnowball()) {
+        std::cout << "Snowball, your white cat" << std::endl;
+    }
+    if (baggie->getNibbles()) {
+        std::cout << "Nibbles, your grey tortoiseshell cat" << std::endl;
+    }
+    if (baggie->getCreases()) {
+        std::cout << "Creases, your hairless cat" << std::endl;
+    }
+    std::cout << std::endl;
+}
 
