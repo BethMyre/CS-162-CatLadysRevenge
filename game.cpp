@@ -37,7 +37,7 @@ void Game::play(){
         //a particular space.
         selection = playerPtr->action();
         //The time is displayed after each movement.
-        if (selection != 5 {
+        if (selection != 5) {
             displayTime();
         }
         if (selection == 1){
