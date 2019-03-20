@@ -1,7 +1,8 @@
 /*******************************************************************************
  ** Author: Beth Myre
- ** Date:
- ** Description:
+ ** Date: 3/19/19
+ ** Description: This is the header file for the Store class, which is a child
+ * class of the Space class.
 *******************************************************************************/
 
 #include <string>
@@ -30,6 +31,7 @@ int Store::action() {
         std::cout << "The man shakes his head.  \"The tuna costs $10 and the cat costs $75.\"" << std::endl << std::endl;
         hereBefore = 1;
     }
+    //If you've already bought the tuna and Creases
     if (catHere == 0 && tuna == 0) {
         std::cout << "Since you've already bought anything you might want from the store, "
             << "there's nothing else for you to do here." << std::endl << std::endl;
@@ -41,6 +43,7 @@ int Store::action() {
             std::cout << "2. Buy something." << std::endl;
             selection = intValidate(1, 2);
             if (selection == 2) {
+                //Items are displayed one at a time if they are available
                 if (catHere == 1){
                     std::cout << "Would you like to buy Creases for $75?" << std::endl;
                     std::cout << "1. Yes." << std::endl;
@@ -79,6 +82,7 @@ int Store::action() {
                         }
                     }
                 }
+                //Once you've bought both things
                 if (catHere == 0 && tuna == 0) {
                     std::cout << "There is nothing else that you're interested in buying." << std::endl << std::endl;
                 }

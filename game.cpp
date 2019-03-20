@@ -29,11 +29,14 @@ void Game::play(){
     theTime = 0;
     myBag = new Bag;
 
-    //The user will start at work. createBoard() returns a pointer to the Work space.
+    //The user will start at work, so createBoard() returns a pointer to the Work space.
     playerPtr = createBoard();
     int selection = 0;
     while (theTime <= 180) {
+        //The action method returns the direction that the player is moving when leaving
+        //a particular space.
         selection = playerPtr->action();
+        //The time is displayed after each movement.
         displayTime();
         if (selection == 1){
             moveTop();
@@ -49,10 +52,6 @@ void Game::play(){
         }
     }
 
-    std::cout << "Now we're back in Game::play" << std::endl;
-    displayTime();
-    theTime += 10;
-    displayTime();
     destroyBoard(myHome);
     delete myBag;
 }
@@ -86,6 +85,7 @@ Space * Game::createBoard(){
     myPark = new Park(myBag);
 
     //Make spaces point to each other
+    //Anything not set here will stay pointed to nullptr
     myWork->setBottom(myStreet);
     myDogMan->setRight(myStreet);
     myStreet->setLeft(myDogMan);
@@ -113,11 +113,11 @@ void Game::destroyBoard(Space * home){
 }
 
 void Game::displayTime() {
-    //Need to make minutes alway be 2 digits wide
     std::cout << std::endl << "The time is now " << 5 + theTime/60 << ":" << std::setw(2) << std::setfill('0')
         << theTime%60 << "." << std::endl << std::endl;
 }
 
+//Time is incremented by 5 minutes in each of the move functions.
 void Game::moveTop() {
     theTime += 5;
     playerPtr = playerPtr->getTop();

@@ -1,7 +1,8 @@
 /*******************************************************************************
  ** Author: Beth Myre
- ** Date:
- ** Description:
+ ** Date: 3/19/19
+ ** Description: This is the header file for the Home class, which is a child
+ * class of the Space class.
 *******************************************************************************/
 
 #include <string>
@@ -11,8 +12,7 @@
 
 Home::Home (Bag * baggie)
         : Space(baggie) {
-    catHere = 0;        //This variable is not used for Home. Instead, indiv cat variables.
-    snowballHere = 0;
+    catHere = 0;
 }
 
 Home::~Home() {

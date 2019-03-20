@@ -1,7 +1,8 @@
 /*******************************************************************************
  ** Author: Beth Myre
- ** Date:
- ** Description:
+ ** Date: 3/19/19
+ ** Description: This is the header file for the DogMan class, which is a child
+ * class of the Space class.  This class represents Dog Man's home.
 *******************************************************************************/
 
 #ifndef DOGMAN_HPP
@@ -19,7 +20,6 @@ public:
     ~DogMan();
 
     int action();
-
 };
 
 

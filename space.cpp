@@ -1,7 +1,8 @@
 /*******************************************************************************
  ** Author: Beth Myre
- ** Date:
- ** Description:
+ ** Date: 3/19/19
+ ** Description: This is the implementation file for the Space class, which is the parent
+ * class of all of the other space-derived classes.  It is a pure virtual class.
 *******************************************************************************/
 
 #include <iostream>

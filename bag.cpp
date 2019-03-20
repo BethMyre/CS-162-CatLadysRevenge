@@ -1,7 +1,8 @@
 /*******************************************************************************
  ** Author: Beth Myre
- ** Date:
- ** Description:
+ ** Date: 3/19/19
+ ** Description: This is the implementation file for the Bag class, which is used to hold
+ * the things that Cat Lady accumulates throughout the game.
 *******************************************************************************/
 
 #include <string>
@@ -10,16 +11,21 @@
 Bag::Bag() {
     money = 0;
     tuna = 0;
-    mousetraps = 0;
     snowball = 0;
     nibbles = 0;
     creases = 0;
+    revenge = 0;
 }
 
 int Bag::getMoney() {
     return money;
 }
 
+//changeMoney(int) is used to add or subtract money from Cat Lady's purse.
+//The bag can hold a maximum of $75, so any amount that goes over the limit
+//is set back to $75.  Based on which bool the function returns,
+//the program knows whether this has happened.  The limit is low enough that
+//players will always have to go back to work at least once.
 int Bag::changeMoney(int diffMoney) {
     money += diffMoney;
     if (money > 75){
@@ -61,4 +67,12 @@ bool Bag::getCreases() {
 
 void Bag::setCreases(bool creasesPresent) {
     creases = creasesPresent;
+}
+
+bool Bag::getRevenge() {
+    return revenge;
+}
+
+void Bag::setRevenge(bool revengePresent) {
+    revenge = revengePresent;
 }

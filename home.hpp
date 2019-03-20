@@ -1,7 +1,8 @@
 /*******************************************************************************
  ** Author: Beth Myre
- ** Date:
- ** Description:
+ ** Date: 3/19/19
+ ** Description: This is the header file for the Home class, which is a child
+ * class of the Space class.
 *******************************************************************************/
 
 #ifndef HOME_HPP
@@ -13,7 +14,6 @@
 class Home : public Space{
 
 private:
-    bool snowballHere;
 
 public:
     Home(Bag *);

@@ -1,7 +1,8 @@
 /*******************************************************************************
  ** Author: Beth Myre
- ** Date:
- ** Description:
+ ** Date: 3/19/19
+ ** Description: This is the implementation file for the Restaurant class, which is a child
+ * class of the Space class.
 *******************************************************************************/
 
 #include <string>
@@ -20,14 +21,18 @@ Restaurant::~Restaurant() {
 
 int Restaurant::action() {
     int selection = 0;
+    //If Nibbles is still here
     if (catHere == 1) {
         std::cout << "As you walk into the restaurant, you see a claw arcade game full of stuffed animals." << std::endl;
         std::cout << "There is movement in the machine.  It's Nibbles, your grey tortoiseshell cat!" << std::endl;
         std::cout << "On the machine is a sign which reads \"$5 per attempt. 1 in 8 chance of winning.\"" << std::endl;
         std::cout << "You make eye contact with Nibbles.  She's clearly thinking the same thing you are." << std::endl;
+
+        //This sentence is there so that you don't worry about Nibbles being injured.  She's looking out for herself.  :)
         std::cout << "If you play the game, she'll try to position herself so that the claw picks her up."
             << std::endl << std::endl;
     }
+    //If you've already rescued Nibbles
     else {
         std::cout << "Since you've already rescued Nibbles, there's nothing for you to do here."
             << std::endl << std::endl;
@@ -40,6 +45,8 @@ int Restaurant::action() {
             selection = intValidate(1, 2);
             if (selection == 2) {
                 if (theBag->getMoney() >= 5){
+                    //The number of times it will take a player to rescue Nibbles will change according to
+                    //the random numbers generated.
                     int num = rand()%8;
                     if (num == 0) {
                         std::cout << "The claw gently picks up Nibbles and drops her into the chute. :)" << std::endl;

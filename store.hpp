@@ -1,7 +1,8 @@
 /*******************************************************************************
  ** Author: Beth Myre
- ** Date:
- ** Description:
+ ** Date: 3/19/19
+ ** Description: This is the header file for the Store class, which is a child
+ * class of the Space class.
 *******************************************************************************/
 
 #ifndef STORE_HPP

@@ -1,7 +1,8 @@
 /*******************************************************************************
  ** Author: Beth Myre
- ** Date:
- ** Description:
+ ** Date: 3/19/19
+ ** Description: This is the implementation file for the Street class, which is a child
+ * class of the Space class.
 *******************************************************************************/
 
 #include <string>
@@ -21,7 +22,6 @@ Street::~Street() {
 int Street::action() {
     int selection = 0;
     std::cout << "You are now standing in the street." << std::endl;
-
     std::cout << "In order to get home, you need to walk through the park." << std::endl;
     while (selection != 1) {
         std::cout << "What would you like to do?" << std::endl;
@@ -31,6 +31,7 @@ int Street::action() {
         selection = intValidate(1, 3);
         if (selection == 1) {
             std::cout << "Where would you like to go?" << std::endl;
+            //You just go straight home the first time you're passing through
             if (hereBefore == 0) {
                 std::cout << "1. To the park." << std::endl;
                 intValidate(1, 1);
@@ -76,7 +77,9 @@ void Street::displayMap() {
 
 void Street::displayPurse(Bag * baggie) {
     std::cout << std::endl << "Looking in your purse, you find:" << std::endl;
+    //Money is always displayed, even if the amount is $0.
     std::cout << "$" << baggie->getMoney() << std::endl;
+    //All other items are displayed only if they are in the purse
     if (baggie->getTuna()) {
         std::cout << "A can of tuna" << std::endl;
     }
@@ -89,6 +92,9 @@ void Street::displayPurse(Bag * baggie) {
     if (baggie->getCreases()) {
         std::cout << "Creases, your hairless cat" << std::endl;
     }
+    //Revenge is an invisible item and is not displayed.  It is just "held" in the bag so that
+    //the DogMan object has an easy way to communicate with the Home object about whether the
+    //game can be won.
     std::cout << std::endl;
 }
 
