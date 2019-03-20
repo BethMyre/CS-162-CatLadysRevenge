@@ -73,6 +73,7 @@ void Street::displayMap() {
     std::cout << "*                                                 HOUSE        *" << std::endl;
     std::cout << "*                    *                    *                    *" << std::endl;
     std::cout << "****************************************************************" << std::endl;
+    std::cout << std::endl;
 }
 
 void Street::displayPurse(Bag * baggie) {

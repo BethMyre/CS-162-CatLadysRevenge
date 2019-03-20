@@ -32,7 +32,7 @@ void Game::play(){
     //The user will start at work, so createBoard() returns a pointer to the Work space.
     playerPtr = createBoard();
     int selection = 0;
-    while (theTime <= 180) {
+    while (theTime <= 180 && selection != 5) {
         //The action method returns the direction that the player is moving when leaving
         //a particular space.
         selection = playerPtr->action();
@@ -50,6 +50,14 @@ void Game::play(){
         else if (selection == 4){
             moveBottom();
         }
+    }
+    if (theTime > 180) {
+        std::cout << std::endl << "Oh no!  It's past your bedtime!" << std::endl;
+        std::cout << "YOU LOSE.  :(" << std::endl << std::endl;
+    }
+    else {
+        std::cout << "You did it! You're in bed with all of your cats by your bedtime!" << std::endl;
+        std::cout << "YOU WIN!  :)" << std::endl << std::endl;
     }
 
     destroyBoard(myHome);

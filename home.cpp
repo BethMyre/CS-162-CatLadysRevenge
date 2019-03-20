@@ -21,7 +21,7 @@ Home::~Home() {
 
 int Home::action() {
     int selection = 0;
-
+    //This scene only happens the first time you go to your house.
     if (hereBefore == 0) {
         std::cout << "You walk towards your house... Oh no!" << std::endl;
         std::cout << "Someone has opened your front door and let your three indoor cats escape!" << std::endl;
@@ -32,6 +32,23 @@ int Home::action() {
         std::cout << "You leave your house and go back to the park..." << std::endl;
         hereBefore = 1;
         return 3;
+    }
+    //If you don't have all of your cats yet
+    else if (!theBag->getSnowball() || !theBag->getNibbles() || !theBag->getCreases()) {
+        std::cout << "You realize that you shouldn't be home while any of your cats are" << std::endl;
+        std::cout << "scared and alone out in the world, so you go back to the park." << std::endl;
+        return 3;
+    }
+    //If you have all of your cats but haven't gotten revenge on Dog Man yet
+    else if (!theBag->getRevenge()) {
+        std::cout << "As happy as you are to have all of your cats back, you can't rest" << std::endl;
+        std::cout << "until you've gotten some type of revenge on Dog Man." << std::endl;
+        std::cout << "You turn around and go back to the park." << std::endl;
+        return 3;
+    }
+    //If you have your cats and have gotten revenge, you win!
+    else {
+        return 5;
     }
 
 }
