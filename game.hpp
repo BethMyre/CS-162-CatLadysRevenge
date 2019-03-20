@@ -1,7 +1,7 @@
 /*******************************************************************************
  ** Author: Beth Myre
- ** Date:
- ** Description:
+ ** Date: 3/19/19
+ ** Description: This is the header file for the Game class.
 *******************************************************************************/
 
 #ifndef GAME_HPP
@@ -40,7 +40,6 @@ private:
 
     Space * createBoard();
     void destroyBoard(Space * home);    //Should this be Space * &home ?
-    void intro();
     void displayTime();
     void moveTop();
     void moveRight();
@@ -52,7 +51,6 @@ public:
     void play();
     int start();
     int again();
-
 
 };
 

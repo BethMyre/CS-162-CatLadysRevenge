@@ -1,9 +1,9 @@
 /*******************************************************************************
  ** Author: Beth Myre
- ** Date:
- ** Description:
+ ** Date: 3/19/19
+ ** Description: This is the main file for Cat Lady's Revenge, a text-based
+ * adventure game.
 *******************************************************************************/
-
 
 #include <iostream>
 #include <string>

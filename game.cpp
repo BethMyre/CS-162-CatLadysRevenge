@@ -1,7 +1,7 @@
 /*******************************************************************************
  ** Author: Beth Myre
- ** Date:
- ** Description:
+ ** Date: 3/19/19
+ ** Description: This is the implementation file for the game class.
 *******************************************************************************/
 
 #include <iostream>
@@ -28,8 +28,9 @@ Game::Game() {
 void Game::play(){
     theTime = 0;
     myBag = new Bag;
+
+    //The user will start at work. createBoard() returns a pointer to the Work space.
     playerPtr = createBoard();
-    intro();
     int selection = 0;
     while (theTime <= 180) {
         selection = playerPtr->action();
@@ -65,19 +66,6 @@ int Game::start(){
     return selection;
 }
 
-void Game::intro(){
-    std::cout <<"***************************************" << std::endl;
-    std::cout <<"          CAT LADY'S REVENGE" << std::endl;
-    std::cout <<"***************************************" << std::endl << std::endl;
-    std::cout << "You're a nice cat lady, enjoying the simple life." << std::endl;
-    std::cout << "You just have a little more work to finish up before you can go home to your cats." << std::endl;
-    std::cout << "If you're cuddled up on the couch with all of your cats by 8:00 pm in time to " << std::endl;
-    std::cout << "watch Wheel of Fortune, you'll be winning at life (and this game)." << std::endl << std::endl;
-    std::cout << "You work at a translation company copying words you don't understand." << std::endl;
-    std::cout << "You earn $10 for every sentence that you type correctly." << std::endl;
-    std::cout << "If the language is particularly difficult, you earn $20 per sentence." << std::endl << std::endl;
-    std::cout << "Before you leave today you'd like to earn at least $50." << std::endl << std::endl;
-}
 
 int Game::again(){
     std::cout << "What would you like to do?" << std::endl;

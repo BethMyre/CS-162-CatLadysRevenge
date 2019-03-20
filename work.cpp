@@ -19,6 +19,20 @@ Work::~Work() {
 }
 
 int Work::action() {
+    if (hereBefore == 0) {
+        std::cout <<"***************************************" << std::endl;
+        std::cout <<"          CAT LADY'S REVENGE" << std::endl;
+        std::cout <<"***************************************" << std::endl << std::endl;
+        std::cout << "You're a nice cat lady, enjoying the simple life." << std::endl;
+        std::cout << "You just have a little more work to finish up before you can go home to your cats." << std::endl;
+        std::cout << "If you're cuddled up on the couch with all of your cats by 8:00 pm in time to " << std::endl;
+        std::cout << "watch Wheel of Fortune, you'll be winning at life (and this game)." << std::endl << std::endl;
+        std::cout << "You work at a translation company copying words you don't understand." << std::endl;
+        std::cout << "You earn $10 for every sentence that you type correctly." << std::endl;
+        std::cout << "If the language is particularly difficult, you earn $20 per sentence." << std::endl << std::endl;
+        std::cout << "Before you leave today you'd like to earn at little more money." << std::endl << std::endl;
+        hereBefore = 1;
+    }
     int selection = 0;
     while (selection != 1) {
         std::cout << "What would you like to do?" << std::endl;
