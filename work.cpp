@@ -54,7 +54,7 @@ int Work::action() {
         else if (selection == 4) {
             int test = theBag->changeMoney(50);
             if (test == 1){
-                std::cout << "Strangely, although your purse can hold three cats, it can only hold $100." << std::endl;
+                std::cout << "Strangely, although your purse can hold three cats, it can only hold $75." << std::endl;
             }
             std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
         }
@@ -73,7 +73,7 @@ void Work::easy() {
                 std::cout << "Excellent work.  You have earned $10." << std::endl;
                 int test = theBag->changeMoney(10);
                 if (test == 1){
-                    std::cout << "Strangely, although your purse can hold three cats, it can only hold $100." << std::endl;
+                    std::cout << "Strangely, although your purse can hold three cats, it can only hold $75." << std::endl;
                 }
                 std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
             }
@@ -89,7 +89,7 @@ void Work::easy() {
                 std::cout << "Excellent work.  You have earned $10." << std::endl;
                 int test = theBag->changeMoney(10);
                 if (test == 1){
-                    std::cout << "Strangely, although your purse can hold three cats, it can only hold $100." << std::endl;
+                    std::cout << "Strangely, although your purse can hold three cats, it can only hold $75." << std::endl;
                 }
                 std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
             }
@@ -105,7 +105,7 @@ void Work::easy() {
                 std::cout << "Excellent work.  You have earned $10." << std::endl;
                 int test = theBag->changeMoney(10);
                 if (test == 1){
-                    std::cout << "Strangely, although your purse can hold three cats, it can only hold $100." << std::endl;
+                    std::cout << "Strangely, although your purse can hold three cats, it can only hold $75." << std::endl;
                 }
                 std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
             }
@@ -121,7 +121,7 @@ void Work::easy() {
                 std::cout << "Excellent work.  You have earned $10." << std::endl;
                 int test = theBag->changeMoney(10);
                 if (test == 1){
-                    std::cout << "Strangely, although your purse can hold three cats, it can only hold $100." << std::endl;
+                    std::cout << "Strangely, although your purse can hold three cats, it can only hold $75." << std::endl;
                 }
                 std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
             }
@@ -137,7 +137,7 @@ void Work::easy() {
                 std::cout << "Excellent work.  You have earned $10." << std::endl;
                 int test = theBag->changeMoney(10);
                 if (test == 1){
-                    std::cout << "Strangely, although your purse can hold three cats, it can only hold $100." << std::endl;
+                    std::cout << "Strangely, although your purse can hold three cats, it can only hold $75." << std::endl;
                 }
                 std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
             }
@@ -161,7 +161,7 @@ void Work::hard() {
                 std::cout << "Excellent work.  You have earned $20." << std::endl;
                 int test = theBag->changeMoney(20);
                 if (test == 1){
-                    std::cout << "Strangely, although your purse can hold three cats, it can only hold $100." << std::endl;
+                    std::cout << "Strangely, although your purse can hold three cats, it can only hold $75." << std::endl;
                 }
                 std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
             }
@@ -177,7 +177,7 @@ void Work::hard() {
                 std::cout << "Excellent work.  You have earned $20." << std::endl;
                 int test = theBag->changeMoney(20);
                 if (test == 1){
-                    std::cout << "Strangely, although your purse can hold three cats, it can only hold $100." << std::endl;
+                    std::cout << "Strangely, although your purse can hold three cats, it can only hold $75." << std::endl;
                 }
                 std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
             }
@@ -193,7 +193,7 @@ void Work::hard() {
                 std::cout << "Excellent work.  You have earned $20." << std::endl;
                 int test = theBag->changeMoney(20);
                 if (test == 1){
-                    std::cout << "Strangely, although your purse can hold three cats, it can only hold $100." << std::endl;
+                    std::cout << "Strangely, although your purse can hold three cats, it can only hold $75." << std::endl;
                 }
                 std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
             }
@@ -209,7 +209,7 @@ void Work::hard() {
                 std::cout << "Excellent work.  You have earned $20." << std::endl;
                 int test = theBag->changeMoney(20);
                 if (test == 1){
-                    std::cout << "Strangely, although your purse can hold three cats, it can only hold $100." << std::endl;
+                    std::cout << "Strangely, although your purse can hold three cats, it can only hold $75." << std::endl;
                 }
                 std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
             }
@@ -225,7 +225,7 @@ void Work::hard() {
                 std::cout << "Excellent work.  You have earned $20." << std::endl;
                 int test = theBag->changeMoney(20);
                 if (test == 1){
-                    std::cout << "Strangely, although your purse can hold three cats, it can only hold $100." << std::endl;
+                    std::cout << "Strangely, although your purse can hold three cats, it can only hold $75." << std::endl;
                 }
                 std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
             }

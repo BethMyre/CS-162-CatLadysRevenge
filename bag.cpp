@@ -22,8 +22,8 @@ int Bag::getMoney() {
 
 int Bag::changeMoney(int diffMoney) {
     money += diffMoney;
-    if (money > 100){
-        money = 100;
+    if (money > 75){
+        money = 75;
         return 1;
     }
     else {
