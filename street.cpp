@@ -54,6 +54,7 @@ int Street::action() {
             displayPurse(theBag);
         }
     }
+    return 0;
 }
 
 void Street::displayMap() {

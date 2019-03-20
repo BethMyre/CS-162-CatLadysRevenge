@@ -65,6 +65,7 @@ int Work::action() {
             std::cout << "Now you have $" << theBag->getMoney() << "." << std::endl << std::endl;
         }
     }
+    return 0;
 }
 
 void Work::easy() {
