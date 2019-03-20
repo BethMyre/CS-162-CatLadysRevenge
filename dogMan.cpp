@@ -26,7 +26,7 @@ int DogMan::action() {
         std::cout << "You're going to focus on rescuing your cats first." << std::endl;
     }
     //Once the player has all of the cats, the following scene takes place.
-    else {
+    else if (!theBag->getRevenge()){
         std::cout << "Now that you've rescued all of your cats, it's time to make Dog Man pay." << std::endl;
         std::cout << "You stand next to his mailbox, trying to decide what to do." << std::endl;
         std::cout << "You open your purse to pet your sweet cats while you're thinking." << std::endl;
@@ -40,6 +40,11 @@ int DogMan::action() {
 
         //This will allow the game to know whether this scene has already happened.
         theBag->setRevenge(1);
+    }
+    //If you've already put the cat vomit in the mailbox
+    else {
+        std::cout << "You probably shouldn't hang around here any more." << std::endl;
+        std::cout << "Why not go home and cuddle with your sweet cats?" << std::endl;
     }
     std::cout << "You turn around and leave." << std::endl << std::endl;
     return 2;
