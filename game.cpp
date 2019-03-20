@@ -6,6 +6,7 @@
 
 #include <iostream>
 #include <string>
+#include <iomanip>
 #include "game.hpp"
 #include "intValidate.hpp"
 #include "space.hpp"
@@ -125,8 +126,8 @@ void Game::destroyBoard(Space * home){
 
 void Game::displayTime() {
     //Need to make minutes alway be 2 digits wide
-    std::cout << std::endl << "The time is now " << 5 + theTime/60 << ":" << theTime%60
-        << "." << std::endl << std::endl;
+    std::cout << std::endl << "The time is now " << 5 + theTime/60 << ":" << std::setw(2) << std::setfill('0')
+        << theTime%60 << "." << std::endl << std::endl;
 }
 
 void Game::moveTop() {
