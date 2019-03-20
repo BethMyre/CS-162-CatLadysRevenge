@@ -41,17 +41,18 @@ private:
     Space * createBoard();
     void destroyBoard(Space * home);    //Should this be Space * &home ?
     void intro();
+    void displayTime();
+    void moveTop();
+    void moveRight();
+    void moveLeft();
+    void moveBottom();
 
 public:
     Game();
     void play();
     int start();
     int again();
-    void displayTime();
-    void moveTop();
-    void moveRight();
-    void moveLeft();
-    void moveBottom();
+
 
 };
 
